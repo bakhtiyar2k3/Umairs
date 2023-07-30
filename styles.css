@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  /* border:1px solid white; */
+}
+body {
+  /* width: 100vw; */
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(Images/bakground.png);
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  text-align: center;
+}
+.all {
+  width: 968px;
+  margin: 0 auto;
+  /* border:2px solid red; */
+  text-align: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 100;
+}
+nav a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin: 0.7rem;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+.logo h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(231, 131, 0);
+  font-size: 2rem;
+}
+.nav_links a:hover {
+  color: orange;
+  text-decoration: underline;
+  font-size: larger;
+}
+.main {
+  padding: 0 2rem;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+.main h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+.main img {
+  width: 400px;
+  border-radius: 30%;
+}
+.title button {
+  color: rgb(231, 131, 0);
+  font-size: 1.3rem;
+  border: 1px solid rgb(231, 131, 0);
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 25px;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.title button:hover {
+  background-color: rgb(231, 131, 0);
+  color: black;
+}
+
+/* _________________portfolio start_______________ */
+.portfolio {
+  padding: 0 2rem;
+  padding-top: 6%;
+  text-align: center;
+}
+.portfolio h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1%;
+}
+hr {
+  margin-bottom: 5%;
+}
+.portfolioCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  width: 275px;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translate(0, -2%);
+}
+.card img {
+  width: 280px;
+  border-radius: 10px;
+  margin: 5px;
+  border: 2px solid rgb(231, 131, 0);
+}
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: rgba(231, 131, 0, 0.775);
+}
+.card p {
+  font-size: 1.5rem;
+}
+.about {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  padding-top: 6%;
+  text-align: center;
+}
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutContent img {
+  width: 350px;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+.about h1 {
+  font-size: 4rem;
+}
+.aboutContent p {
+  color: rgba(231, 131, 0, 0.718);
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 60%;
+  text-align: left;
+}
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact h1 {
+  font-size: 4rem;
+}
+.contactBox {
+  margin: 2rem auto;
+  width: 500px;
+  border-radius: 70px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 3px solid rgb(231, 131, 0);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.contact input {
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  /* transition: .3s ease; */
+}
+.contact input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(231, 131, 0);
+}
+.contact a {
+  text-decoration: none;
+  color: rgb(231, 131, 0);
+  font-size: 1.5rem;
+  border: 1px solid rgb(231, 131, 0);
+  border-radius: 25px;
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact a:hover {
+  background-color: rgb(231, 131, 0);
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+  .card img {
+    width: 600px;
+  }
+  .card h3 {
+    font-size: 4rem;
+  }
+  .card p {
+    font-size: 2rem;
+  }
+  .aboutContent img {
+    width: 80%;
+  }
+  .aboutContent {
+    font-size: 1.8rem;
+    width: 500px;
+    margin: auto;
+  }
+  .all {
+    text-align: center;
+  }
+
+  .nav_links ul {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: start; */
+    text-align: center;
+  }
+
+  .portfolioCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .aboutContent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .aboutContent p {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .contactBox {
+    width: 85%;
+  }
+}
