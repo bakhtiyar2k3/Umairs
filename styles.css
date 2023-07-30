@@ -162,7 +162,7 @@ hr {
   color: rgba(231, 131, 0, 0.718);
   font-size: 1.5rem;
   font-weight: 400;
-  width: 300px;
+  width: 60%;
   text-align: left;
 }
 .contact {
@@ -216,10 +216,16 @@ hr {
 }
 @media screen and (max-width: 768px) {
   .card {
-    width: 700px;
+    width: 80%;
   }
   .card img {
     width: 600px;
+  }
+  .card h3 {
+    font-size: 4rem;
+  }
+  .card p {
+    font-size: 2rem;
   }
   .aboutContent img {
     width: 500px;
@@ -253,6 +259,7 @@ hr {
   }
 
   .aboutContent {
+    width:80%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -261,24 +268,11 @@ hr {
 
   .aboutContent p {
     width: 90%;
+    font-size: 2rem;
+
   }
 
   .contactBox {
     width: 85%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .card,
-  .card img {
-    width: 300px;
-  }
-  .card img {
-    width: 300px;
-  }
-  .aboutContent img {
-    width: 200px;
-  }
-  .aboutContent p {
-    width: 300px;
   }
 }
